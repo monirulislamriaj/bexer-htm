@@ -1,0 +1,43 @@
+@@include('header.htm')
+
+@@include('blocks/navigation.htm')
+
+@@include('blocks/page-title.htm', {"title": "About Us 2"})
+
+<!-- about us -->
+<section class="section position-relative">
+  <div class="container">
+    <div class="row justify-content-between mb-80">
+      @@include('blocks/about-us-3.htm')
+    </div>
+    @@include('blocks/philosophy.htm')
+  </div>
+  <!-- background shape -->
+  <img class="img-fluid about-bg-shape" src="images/backgrounds/about-us-3-bg.png" alt="shape">
+</section>
+<!-- /about us -->
+
+@@include('blocks/feature-2.htm')
+
+@@include('blocks/customer.htm')
+
+<!-- team -->
+<section class="section bg-gray-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <span class="section-title-border border-center"></span>
+        <p class="subtitle">Our Team</p>
+        <h2 class="section-title">We Are Dynamic Team and<br>Business Agency</h2>
+      </div>
+    </div>
+    <div class="row">
+      @@include('blocks/team.htm')
+    </div>
+  </div>
+</section>
+<!-- /team -->
+
+@@include('blocks/footer.htm')
+
+@@include('footer.htm')

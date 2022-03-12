@@ -1,0 +1,83 @@
+@@include('header.htm')
+
+@@include('blocks/navigation.htm')
+
+@@include('blocks/page-title.htm', {"title": "About Us 1"})
+
+<!-- philosophy -->
+<section class="section bg-gray position-relative">
+  <div class="container position-relative zindex-1">
+    @@include('blocks/philosophy.htm')
+  </div>
+  <!-- background shapes -->
+  <img class="img-fluid philosophy-bg-shape" src="images/backgrounds/about-page-bg.png" alt="shape">
+  <img class="img-fluid about-bg-shape" src="images/backgrounds/about-us-3-bg.png" alt="shape">
+</section>
+<!-- /philosophy -->
+
+<!-- about us -->
+<section class="section">
+  @@include('blocks/about-us.htm')
+</section>
+<!-- /about us -->
+
+<!-- service -->
+<section class="bg-gray-white">
+  <div class="section bg-secondary section-bottom-lg">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <span class="section-title-border border-center"></span>
+          <p class="subtitle">Best Service</p>
+          <h2 class="section-title text-white">Service We Provide</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="service-wrapper">
+    <div class="container">
+      <div class="row">
+        @@include('blocks/service.htm')
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /service -->
+
+<!-- team -->
+<section class="section pt-0 bg-gray-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <span class="section-title-border border-center"></span>
+        <p class="subtitle">Our Team</p>
+        <h2 class="section-title">We Are Dynamic Team and<br>Business Agency</h2>
+      </div>
+    </div>
+    <div class="row">
+      @@include('blocks/team.htm')
+    </div>
+  </div>
+</section>
+<!-- /team -->
+
+@@include('blocks/testimonial-2.htm')
+
+<!-- pricing -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <span class="section-title-border border-center"></span>
+        <p class="subtitle">Pricing Table</p>
+        <h2 class="section-title">Best Price Ever</h2>
+      </div>
+    </div>
+    @@include('blocks/pricing.htm')
+  </div>
+</section>
+<!-- /pricing -->
+
+@@include('blocks/footer.htm')
+
+@@include('footer.htm')

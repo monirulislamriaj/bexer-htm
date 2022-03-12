@@ -1,0 +1,51 @@
+<!-- chart -->
+<canvas id="profit"></canvas>
+
+<!-- script -->
+<script>
+  let profit = document.getElementById('profit').getContext('2d');
+  let profitChart = new Chart(profit, {
+    type: 'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+    data: {
+      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'jul'],
+      datasets: [{
+        label: 'Profit',
+        data: [
+          230,
+          400,
+          500,
+          380,
+          350,
+          450,
+          601
+        ],
+        backgroundColor: 'transparent',
+        borderWidth: 3,
+        borderColor: '#86c33a'
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Sales: 1 Sep, 2017 - 2 Aug, 2018',
+        fontSize: 15
+      },
+      legend: {
+        display: true,
+        position: 'right',
+        padding: 5,
+      },
+      layout: {
+        padding: {
+          left: 0,
+          right: 0,
+          bottom: 0,
+          top: 0
+        }
+      },
+      tooltips: {
+        enabled: true
+      }
+    }
+  });
+</script>
